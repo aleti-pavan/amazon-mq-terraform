@@ -25,3 +25,7 @@ variable deployment_mode {
 variable publicly_accessible {
   default = true
 }
+
+variable mq_cluster_instance_count {
+  default = "1"
+}
