@@ -1,3 +1,7 @@
+variable broker_name {
+  default = "mqtest"  
+}
+
 variable engine_version {
   default = "3.8.6"
 }
