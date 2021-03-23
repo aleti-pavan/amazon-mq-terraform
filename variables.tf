@@ -7,7 +7,7 @@ variable engine_type {
 }
 
 variable host_instance_type {
-  default = "mq.t3.micro"
+  default = "mq.m5.large"
 }
 
 variable username {
@@ -19,7 +19,7 @@ variable password {
 }
 
 variable deployment_mode {
-  default = "SINGLE_INSTANCE"
+  default = "CLUSTER_MULTI_AZ"
 }
 
 variable publicly_accessible {

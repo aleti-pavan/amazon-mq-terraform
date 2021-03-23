@@ -4,8 +4,8 @@ provider aws {
 
 
 resource "aws_mq_broker" "mq" {
-  count = var.mq_cluster_instance_count
-  broker_name = "mq-${count.index}"
+//  count = var.mq_cluster_instance_count
+  broker_name = "mq"
   engine_type        = var.engine_type
   engine_version     = var.engine_version
   host_instance_type = var.host_instance_type
