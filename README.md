@@ -4,6 +4,7 @@ This project creates a basic amazon rabbit mq. Once you applied and played with 
 
 # Variables
 | Name | Value |
+|------|---------|
 |deployment_mode | `SINGLE_INSTANCE` or `CLUSTER_MULTI_AZ`|
 
 |publicly_accessible | `yes` or `no`|
