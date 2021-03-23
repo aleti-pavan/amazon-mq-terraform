@@ -18,5 +18,4 @@ terraform apply -auto-approve
 ```
 
 # Remove
-
 `terraform destroy -auto-approve`
