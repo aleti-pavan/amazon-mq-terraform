@@ -1,5 +1,5 @@
 variable broker_name {
-  default = "mqtest"  
+  default = "mqtest"
 }
 
 variable engine_version {
@@ -36,4 +36,18 @@ variable mq_cluster_instance_count {
 
 variable storage_type {
   default = "ebs"
+}
+
+variable "tags" {
+  description = "Tags to be used with resources"
+  type        = map(string)
+  default = {
+    purpose = "test"
+  }
+}
+
+variable "existing_kms_key_arn" {
+  description = "ARN of the KMS Key used for encryption at rest"
+  type        = string
+  default     = null
 }
