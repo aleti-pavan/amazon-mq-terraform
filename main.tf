@@ -11,6 +11,7 @@ resource "aws_mq_broker" "mq" {
   //  security_groups    = [aws_security_group.test.id]
   deployment_mode     = var.deployment_mode
   publicly_accessible = var.publicly_accessible
+  storage_type       = var.storage_type
 
   user {
     username = var.username

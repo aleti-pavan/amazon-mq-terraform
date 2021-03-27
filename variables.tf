@@ -33,3 +33,7 @@ variable publicly_accessible {
 variable mq_cluster_instance_count {
   default = "1"
 }
+
+variable storage_type {
+  default = "ebs"
+}
