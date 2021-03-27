@@ -35,8 +35,7 @@ resource "aws_kms_key" "mq_kms_key" {
   deletion_window_in_days = 30
   description             = "Default/Created KMS Key for MQ Instance"
   enable_key_rotation     = true
- // policy                  = templatefile(format("%s/policies/default_kms_key_policy.json", path.module), { ACCOUNT_ID = data.aws_caller_identity.identity.account_id })
- // policy                  = templatefile(format("%s/policies/default_kms_key_policy.json", path.cwd), { ACCOUNT_ID = data.aws_caller_identity.identity.account_id })
+  policy                  = templatefile(format("%s/policies/default_kms_key_policy.json", path.module), { ACCOUNT_ID = data.aws_caller_identity.identity.account_id })
   tags                    = var.tags
 }
 
